@@ -2,12 +2,8 @@ streamlit
 pandas
 numpy
 pandasql
-os
-sys
-time
 tabula
 calendar
 tkinter
 queue
-datetime
 openpyxl
