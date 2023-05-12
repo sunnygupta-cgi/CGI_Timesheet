@@ -3,6 +3,4 @@ pandas
 numpy
 pandasql
 tabula
-tkinter
-queue
 openpyxl
