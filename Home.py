@@ -2,7 +2,7 @@ import calendar, datetime
 from calendar import c, month_name
 from distutils.command.upload import upload
 from queue import Empty
-from tkinter import PAGES
+#from tkinter import PAGES
 import streamlit as st
 import pandas as pd
 import numpy as np
