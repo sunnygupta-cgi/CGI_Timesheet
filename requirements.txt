@@ -3,4 +3,5 @@ pandas
 numpy
 pandasql
 tabula
+read_pdf
 openpyxl
