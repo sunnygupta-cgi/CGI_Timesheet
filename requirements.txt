@@ -3,7 +3,6 @@ pandas
 numpy
 pandasql
 tabula
-calendar
 tkinter
 queue
 openpyxl
