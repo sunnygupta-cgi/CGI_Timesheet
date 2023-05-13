@@ -13,6 +13,8 @@ import time
 from tabula.io import read_pdf, convert_into
 #df = read_pdf('')
 
+os.environ['JAVA_HOME'] = '/usr/lib/jvm/java-11-openjdk-amd64'
+
 st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/CGI_logo.svg/1200px-CGI_logo.svg.png")
 st.header('Time Sheet Review Tool')
 st.markdown(""" Welcome!! This tool is used to analyze the timesheet details and provide insights about the SOW """)
