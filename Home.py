@@ -10,7 +10,7 @@ import pandasql as psql
 import os
 import sys
 import time
-from tabula.io import read_pdf, convert_into
+from tabula import read_pdf, convert_into
 #df = read_pdf('')
 
 st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/CGI_logo.svg/1200px-CGI_logo.svg.png")
