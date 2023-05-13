@@ -10,7 +10,8 @@ import pandasql as psql
 import os
 import sys
 import time
-from tabula import read_pdf, convert_into
+import tabula 
+#import read_pdf, convert_into
 #df = read_pdf('')
 
 st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/CGI_logo.svg/1200px-CGI_logo.svg.png")
@@ -189,8 +190,8 @@ if uploaded_file is not None:
     def display_CGI_Statutory_Holidays(df10):
         df10 = df10
         if df10 is not None:
-            df11 = read_pdf(df10, stream=True, pages = 1)
-            df12 = read_pdf(df10, stream=True, pages = 2)
+            df11 = tabula.read_pdf(df10, stream=True, pages = 1)
+            df12 = tabula.read_pdf(df10, stream=True, pages = 2)
             
            #st.table(df12[0])
             len1 = len(df11[0])
