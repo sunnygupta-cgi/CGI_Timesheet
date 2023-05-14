@@ -191,8 +191,8 @@ if uploaded_file is not None:
     def display_CGI_Statutory_Holidays(df10):
         df10 = df10
         if df10 is not None:
-            df11 = read_pdf(df10, stream=True, pages = 1)
-            df12 = read_pdf(df10, stream=True, pages = 2)
+            df11 = tabula.io.read_pdf(df10, stream=True, pages = 1)
+            df12 = tabula.io.read_pdf(df10, stream=True, pages = 2)
             
            #st.table(df12[0])
             len1 = len(df11[0])
