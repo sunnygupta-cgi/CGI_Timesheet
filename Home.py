@@ -256,6 +256,7 @@ if uploaded_file is not None:
         st.subheader('Upload CGI Statutory Holidays PDF file to proceed')
         df10 = st.file_uploader('Upload CGI Statutory Holidays PDF File:', accept_multiple_files=False)
         if df10 is not None:
+            st.write("Filename uploaded:", df10.name)
             list_of_holidays = display_CGI_Statutory_Holidays(df10)
             if (list_of_holidays != False):
                 if( len(df14) > 0):
