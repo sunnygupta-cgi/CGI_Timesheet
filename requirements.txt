@@ -3,4 +3,4 @@ pandas
 numpy
 pandasql
 openpyxl
-tabula-py==2.2.0
+tabula-py==2.5.1
