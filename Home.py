@@ -10,10 +10,10 @@ import pandasql as psql
 import os
 import sys
 import time
-from tabula.io import read_pdf, convert_into
+from tabula.io import read_pdf
 #df = read_pdf('')
 
-os.environ['JAVA_HOME'] = '/usr/lib/jvm/java-11-openjdk-amd64'
+#os.environ['JAVA_HOME'] = '/usr/lib/jvm/java-11-openjdk-amd64'
 
 st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/CGI_logo.svg/1200px-CGI_logo.svg.png")
 st.header('Time Sheet Review Tool')
