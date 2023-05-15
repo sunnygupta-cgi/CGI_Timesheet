@@ -190,7 +190,7 @@ if uploaded_file is not None:
         if df10 is not None:
             df11 = read_pdf(df10, stream=True, pages = 1)
             df12 = read_pdf(df10, stream=True, pages = 2)
-            
+
            #st.table(df12[0])
             len1 = len(df11[0])
             len2 = len(df12[0])
@@ -223,7 +223,9 @@ if uploaded_file is not None:
                     #st.text('')
             elif ((len2 > 0) & (var1 not in df12[0].columns)):
                 #st.write('hi df12[0] without Statutory', df12[0].columns)
-                df13 = df12[0].columns.to_frame().T.append(df12[0], ignore_index=True)
+                #df13 = df12[0].columns.to_frame().T.append(df12[0], ignore_index=True)
+                df13 = df12[0].columns.to_frame().T
+                df13 = pd.concat([df13, df12[0]], ignore_index=True)
                 df13.columns = range(len(df13.columns))
                 #st.table(df13)
                 st.text('')
